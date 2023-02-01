@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tvShows.ThePunisherActivity">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/stoner"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="@string/sandman"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold">
+        </TextView>
+    </Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="100"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="75dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/sandmanPoster"
+            android:layout_width="356dp"
+            android:layout_height="253dp"
+            app:srcCompat="@drawable/sandman"
+            android:layout_marginTop="20dp"
+            tools:ignore="MissingConstraints"
+            android:layout_gravity="center">
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:text="2022"
+            android:textSize="20dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="27dp"
+            android:text="Em Sandman, um mago tenta capturar a Morte (Kirby Howell-Baptiste) para barganhar pela vida eterna, no entanto, acaba prendendo seu irmão mais novo Morpheus (Tom Sturridge), o Rei dos Sonhos. Temendo por sua segurança, o mago o mantém preso em uma garrafa de vidro por décadas."
+            android:textAlignment="center"
+            android:textSize="20dp">
+        </TextView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

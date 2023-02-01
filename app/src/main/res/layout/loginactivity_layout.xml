@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/stoner">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginStart="30dp">
+        </TextView>
+    </Toolbar>
+
+
+    <EditText
+        android:id="@+id/loginEditText"
+        android:inputType="text"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="250dp"
+        android:hint="@string/user"
+        android:autofillHints=""
+        android:minHeight="48dp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:inputType="number"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="@string/password"
+        android:autofillHints="password"
+        android:minHeight="48dp">
+    </EditText>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:background="@color/stoner"
+        android:text="@string/entrar"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck">
+    </Button>
+
+</LinearLayout>

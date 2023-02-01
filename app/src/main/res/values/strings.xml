@@ -1,0 +1,13 @@
+<resources>
+    <string name="login">Bem Vindo!</string>
+    <string name="logo">Logo</string>
+    <string name="user">User</string>
+    <string name="password">Password</string>
+    <string name="entrar">Entrar!</string>
+    <string name="thePunisher">The Punisher</string>
+    <string name="friends">Friends</string>
+    <string name="sandman">Sandman</string>
+    <string name="bojackHorseman">Bojack Horseman</string>
+    <string name="hellsing">Hellsing</string>
+
+</resources>
