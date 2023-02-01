@@ -19,7 +19,10 @@ class LoginActivity : AppCompatActivity (){
 
     private fun setupView() {
         binding.loginButton.setOnClickListener {
-            if (binding.loginEditText.text.toString() == ownerName && binding.passwordEditText.toString() == ownerPassword) {
+            val ownerNameMatches = binding.loginEditText.text.toString() == ownerName
+            val passwordMatches = binding.passwordEditText.text.toString() == ownerPassword
+
+            if (ownerNameMatches && passwordMatches) {
                 Toast.makeText(this, "Login e senha vákidos!", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, TVShowListing2Activity::class.java)
                 intent.putExtra(Keys.titleSecondActivityKey, "Séries favoritas!")
