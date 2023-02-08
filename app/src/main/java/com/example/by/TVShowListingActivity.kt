@@ -3,6 +3,7 @@ package com.example.by
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import com.example.by.Keys.tvShowDetailsKey
 import com.example.by.databinding.TvshowlistingactivityLayoutBinding
 import com.example.by.domain.models.TvShow
 import com.example.by.tvShows.TvShowDetailsActivity
@@ -27,7 +28,7 @@ class TVShowListingActivity : AppCompatActivity() {
                 description = resources.getString(R.string.thePunisherDescription)
             )
             val intent = Intent(this, TvShowDetailsActivity::class.java).apply {
-                putExtra("chave_aleatoria", thePunisherTvShow)
+                putExtra(tvShowDetailsKey, thePunisherTvShow)
             }
             startActivity(intent)
         }
@@ -39,7 +40,7 @@ class TVShowListingActivity : AppCompatActivity() {
                 description = resources.getString(R.string.friendsDescription)
             )
             val intent = Intent(this, TvShowDetailsActivity::class.java).apply {
-                putExtra("chave_aleatoria", friendsTvShow)
+                putExtra(tvShowDetailsKey, friendsTvShow)
             }
             startActivity(intent)
         }
@@ -51,7 +52,7 @@ class TVShowListingActivity : AppCompatActivity() {
                 description = resources.getString(R.string.sandmanDescription)
             )
             val intent = Intent(this, TvShowDetailsActivity::class.java).apply {
-                putExtra("chave_aleatoria", sandmanTvShow)
+                putExtra(tvShowDetailsKey, sandmanTvShow)
             }
             startActivity(intent)
         }
@@ -63,7 +64,7 @@ class TVShowListingActivity : AppCompatActivity() {
                 description = resources.getString(R.string.bojackHorsemanDescription)
             )
             val intent = Intent(this, TvShowDetailsActivity::class.java).apply {
-                putExtra("chave_aleatoria", bojackHorsemanTvShow)
+                putExtra(tvShowDetailsKey, bojackHorsemanTvShow)
             }
             startActivity(intent)
         }
@@ -75,7 +76,7 @@ class TVShowListingActivity : AppCompatActivity() {
                 description = resources.getString(R.string.hellsingDescription)
             )
             val intent = Intent(this, TvShowDetailsActivity::class.java).apply {
-                putExtra("chave_aleatoria", hellsingTvShow)
+                putExtra(tvShowDetailsKey, hellsingTvShow)
             }
             startActivity(intent)
         }

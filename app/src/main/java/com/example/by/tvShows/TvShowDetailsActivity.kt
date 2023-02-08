@@ -3,6 +3,7 @@ package com.example.by.tvShows
 import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.by.Keys
 import com.example.by.databinding.TvshowdetailsactivityLayoutBinding
 import com.example.by.domain.models.TvShow
 
@@ -13,7 +14,7 @@ class TvShowDetailsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        val tvShow = intent.extras?.getSerializable("chave_aleatoria") as? TvShow
+        val tvShow = intent.extras?.getSerializable(Keys.tvShowDetailsKey) as? TvShow
 
         if (tvShow != null) {
             binding.toolbar.title = tvShow.title
