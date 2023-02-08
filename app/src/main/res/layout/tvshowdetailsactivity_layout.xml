@@ -23,7 +23,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:text="@string/thePunisher"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 android:textSize="20sp"
@@ -31,30 +30,30 @@
             </TextView>
         </Toolbar>
 
-        <ImageView
-            android:id="@+id/thePunisherPoster"
-            android:layout_width="wrap_content"
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_marginTop="20dp"
-            tools:srcCompat="@drawable/the_punisher"
             tools:ignore="MissingConstraints">
-        </ImageView>
+        </android.support.v7.widget.AppCompatImageView>
 
         <TextView
+            android:id="@+id/ageView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="27dp"
-            tools:text="2017"
-            android:textSize="20dp">
+            android:textSize="20dp"
+            android:textAlignment="center"
+            >
         </TextView>
 
         <TextView
+            android:id="@+id/descriptionView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="27dp"
             android:layout_marginTop="40dp"
             android:layout_marginRight="27dp"
-            tools:text="Em O Justiceiro, o crime não dura quando Frank Castle está por perto. O veterano de guerra é impiedoso na sua guerra contra malfeitores, alimentada pelo ódio gerado quando sua família foi pega no fogo cruzado durante um tiroteio entre mafiosos."
             android:textAlignment="center"
             android:textSize="20dp">
         </TextView>

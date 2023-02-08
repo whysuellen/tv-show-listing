@@ -1,13 +1,29 @@
 <resources>
+<!-- STRINGS DE INICIAÇÃO -->
     <string name="login">Bem Vindo!</string>
-    <string name="logo">Logo</string>
     <string name="user">User</string>
     <string name="password">Password</string>
     <string name="entrar">Entrar!</string>
+
+
+    <!-- NOMES DAS SÉRIES -->
     <string name="thePunisher">The Punisher</string>
     <string name="friends">Friends</string>
     <string name="sandman">Sandman</string>
     <string name="bojackHorseman">Bojack Horseman</string>
     <string name="hellsing">Hellsing</string>
 
+    <!-- LANÇAMENTOS DAS SÉRIES -->
+    <string name="thePunisherAge">2017</string>
+    <string name="friendsAge">1994</string>
+    <string name="sandmanAge">2022</string>
+    <string name="bojackHorsemanAge">2014</string>
+    <string name="hellsingAge">2001 </string>
+
+    <!-- DESCRIÇÃO DAS SÉRIES -->
+    <string name="thePunisherDescription">Em O Justiceiro, o crime não dura quando Frank Castle está por perto. O veterano de guerra é impiedoso na sua guerra contra malfeitores, alimentada pelo ódio gerado quando sua família foi pega no fogo cruzado durante um tiroteio entre mafiosos.</string>
+    <string name="friendsDescription">Seis jovens são unidos por laços familiares, românticos e, principalmente, de amizade, enquanto tentam vingar em Nova York. Rachel é a garota mimada que deixa o noivo no altar para viver com a amiga dos tempos de escola Monica, sistemática e apaixonada pela culinária.</string>
+    <string name="sandmanDescription">Após anos aprisionado, Morpheus, o Rei dos Sonhos, embarca em uma jornada entre mundos para recuperar o que lhe foi roubado e restaurar seu poder.</string>
+    <string name="bojackHorsemanDescription">BoJack (Will Arnett) é um decadente cavalo que trabalha na TV. Uma estrela já esquecida de um seriado da década de 1990 chamado Horsin\' Around, ele disfarça sua baixa auto-estima com uísque e relações fracassadas.</string>
+    <string name="hellsingDescription">A Agência Hellsing, ou Ordem Real dos Cavaleiros Protestantes, é uma organização que tem a missão de acabar com criaturas que ameaçam o Império Britânico e a Igreja Protestante. Integra é a herdeira da família Hellsing designada para dirigir a organização.</string>
 </resources>
