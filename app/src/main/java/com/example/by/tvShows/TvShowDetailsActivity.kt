@@ -1,8 +1,8 @@
 package com.example.by.tvShows
 
 import android.graphics.Color
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.by.Keys
 import com.example.by.databinding.TvshowdetailsactivityLayoutBinding
 import com.example.by.domain.models.TvShow
@@ -10,8 +10,8 @@ import com.example.by.domain.models.TvShow
 class TvShowDetailsActivity : AppCompatActivity() {
     lateinit var binding: TvshowdetailsactivityLayoutBinding
     override fun onCreate(savedInstanceState: Bundle?) {
-        binding = TvshowdetailsactivityLayoutBinding.inflate(this.layoutInflater)
         super.onCreate(savedInstanceState)
+        binding = TvshowdetailsactivityLayoutBinding.inflate(this.layoutInflater)
         setContentView(binding.root)
 
         val tvShow = intent.extras?.getSerializable(Keys.tvShowDetailsKey) as? TvShow

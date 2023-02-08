@@ -2,7 +2,7 @@ package com.example.by
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.example.by.Keys.tvShowDetailsKey
 import com.example.by.databinding.TvshowlistingactivityLayoutBinding
 import com.example.by.domain.models.TvShow

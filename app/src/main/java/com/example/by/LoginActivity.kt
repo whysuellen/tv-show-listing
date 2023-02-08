@@ -2,11 +2,11 @@ package com.example.by
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.by.databinding.LoginactivityLayoutBinding
 
-class LoginActivity : AppCompatActivity (){
+class LoginActivity : AppCompatActivity(){
 
     private lateinit var binding: LoginactivityLayoutBinding
 
