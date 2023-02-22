@@ -19,9 +19,9 @@ class TvShowDetailsActivity : AppCompatActivity() {
         if (tvShow != null) {
             binding.toolbar.title = tvShow.title
             binding.toolbar.setTitleTextColor(Color.WHITE)
-            binding.imageView.setImageResource(tvShow.image)
-            binding.ageView.text = tvShow.age
-            binding.descriptionView.text = tvShow.description
+            binding.tvshowdetailsactivityLayoutImage.setImageResource(tvShow.image)
+            binding.tvshowdetailsactivityLayoutAge.text = tvShow.age
+            binding.tvshowdetailsactivityLayoutDescription.text = tvShow.description
 
         }
     }

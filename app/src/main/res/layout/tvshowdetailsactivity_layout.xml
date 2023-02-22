@@ -21,6 +21,7 @@
             android:layout_height="wrap_content"
             android:background="@color/stoner">
             <TextView
+                android:id="@+id/tvshowdetailsactivity_layout.toolbar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
@@ -31,7 +32,7 @@
         </Toolbar>
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/imageView"
+            android:id="@+id/tvshowdetailsactivity_layout.image"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_marginTop="20dp"
@@ -39,16 +40,15 @@
         </androidx.appcompat.widget.AppCompatImageView>
 
         <TextView
-            android:id="@+id/ageView"
+            android:id="@+id/tvshowdetailsactivity_layout.age"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:textAlignment="center"
-            >
+            android:textAlignment="center">
         </TextView>
 
         <TextView
-            android:id="@+id/descriptionView"
+            android:id="@+id/tvshowdetailsactivity_layout.description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="27dp"

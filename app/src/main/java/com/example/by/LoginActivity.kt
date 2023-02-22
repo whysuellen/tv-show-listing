@@ -23,7 +23,7 @@ class LoginActivity : AppCompatActivity(){
             val passwordMatches = binding.passwordEditText.text.toString() == ownerPassword
 
             if (ownerNameMatches && passwordMatches) {
-                Toast.makeText(this, "Login e senha vákidos!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Login e senha válidos!", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, TVShowListingActivity::class.java)
                 intent.putExtra(Keys.titleSecondActivityKey, "Séries favoritas!")
 
