@@ -8,10 +8,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.by.databinding.TvshowitemLayoutBinding
 import com.example.by.domain.models.TvShow
 import com.example.by.tvShows.TvShowDetailsActivity
+import com.example.by.Keys.tvShowDetailsKey
+
 
 class TvShowAdapter (private val context : Context, private val tvShowList: MutableList<TvShow>):
     RecyclerView.Adapter<TvShowAdapter.TvShowViewHolder>() {
-
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TvShowViewHolder {
         val itemList = TvshowitemLayoutBinding.inflate(LayoutInflater.from(context), parent, false)
@@ -23,10 +24,10 @@ class TvShowAdapter (private val context : Context, private val tvShowList: Muta
         holder.itemView.setOnClickListener {
             val context = holder.itemView.context
             val intent = Intent(context, TvShowDetailsActivity::class.java)
-            intent.putExtra("item", tvShowList[position])
+
+            intent.putExtra(tvShowDetailsKey, tvShowList[position])
             context.startActivity(intent)
         }
-
     }
 
     override fun getItemCount() = tvShowList.size

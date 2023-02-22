@@ -8,7 +8,9 @@ import com.example.by.databinding.TvshowdetailsactivityLayoutBinding
 import com.example.by.domain.models.TvShow
 
 class TvShowDetailsActivity : AppCompatActivity() {
-    lateinit var binding: TvshowdetailsactivityLayoutBinding
+
+    private lateinit var binding: TvshowdetailsactivityLayoutBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = TvshowdetailsactivityLayoutBinding.inflate(this.layoutInflater)
@@ -25,4 +27,6 @@ class TvShowDetailsActivity : AppCompatActivity() {
 
         }
     }
+
+
 }

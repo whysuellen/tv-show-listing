@@ -1,14 +1,11 @@
 package com.example.by
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.by.Keys.tvShowDetailsKey
 import com.example.by.adapter.TvShowAdapter
 import com.example.by.databinding.TvshowlistingactivityLayoutBinding
 import com.example.by.domain.models.TvShow
-import com.example.by.tvShows.TvShowDetailsActivity
 
 class TVShowListingActivity : AppCompatActivity() {
 
@@ -26,23 +23,25 @@ class TVShowListingActivity : AppCompatActivity() {
         tvShowRecyclerView.setHasFixedSize(true)
         tvShowAdapter = TvShowAdapter(this, tvShowList)
         tvShowRecyclerView.adapter = tvShowAdapter
-        shows()
+
+        details()
     }
 
-    private fun shows(){
+    private fun details() {
         val thePunisherTvShow = TvShow(
-                title = resources.getString(R.string.thePunisher),
-                image = R.drawable.the_punisher,
-                age = resources.getString(R.string.thePunisherAge),
-                description = resources.getString(R.string.thePunisherDescription))
+            title = resources.getString(R.string.thePunisher),
+            image = R.drawable.the_punisher,
+            age = resources.getString(R.string.thePunisherAge),
+            description = resources.getString(R.string.thePunisherDescription)
+        )
         tvShowList.add(thePunisherTvShow)
 
-
         val friendsTvShow = TvShow(
-                title = resources.getString(R.string.friends),
-                image = R.drawable.friends,
-                age = resources.getString(R.string.friendsAge),
-                description = resources.getString(R.string.friendsDescription))
+            title = resources.getString(R.string.friends),
+            image = R.drawable.friends,
+            age = resources.getString(R.string.friendsAge),
+            description = resources.getString(R.string.friendsDescription)
+        )
         tvShowList.add(friendsTvShow)
 
 
@@ -50,23 +49,28 @@ class TVShowListingActivity : AppCompatActivity() {
             title = resources.getString(R.string.sandman),
             image = R.drawable.sandman,
             age = resources.getString(R.string.sandmanAge),
-            description = resources.getString(R.string.sandmanDescription))
+            description = resources.getString(R.string.sandmanDescription)
+        )
         tvShowList.add(sandmanTvShow)
 
         val bojackHorsemanTvShow = TvShow(
             title = resources.getString(R.string.bojackHorseman),
             image = R.drawable.bojack,
             age = resources.getString(R.string.bojackHorsemanAge),
-            description = resources.getString(R.string.bojackHorsemanDescription))
+            description = resources.getString(R.string.bojackHorsemanDescription)
+        )
         tvShowList.add(bojackHorsemanTvShow)
 
         val hellsingTvShow = TvShow(
             title = resources.getString(R.string.hellsing),
             image = R.drawable.hellsing,
             age = resources.getString(R.string.hellsingAge),
-            description = resources.getString(R.string.hellsingDescription))
+            description = resources.getString(R.string.hellsingDescription)
+        )
         tvShowList.add(hellsingTvShow)
+
     }
+}
 
 //    private fun setupView() {
 //        binding.buttonThePunisher.setOnClickListener {
@@ -130,4 +134,3 @@ class TVShowListingActivity : AppCompatActivity() {
 //            startActivity(intent)
 //        }
 //    }
-}
