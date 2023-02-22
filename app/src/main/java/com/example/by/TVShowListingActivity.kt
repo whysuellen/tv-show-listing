@@ -1,16 +1,19 @@
 package com.example.by
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.by.adapter.TvShowAdapter
+import com.example.by.adapter.TvShowAdaper2
 import com.example.by.databinding.TvshowlistingactivityLayoutBinding
 import com.example.by.domain.models.TvShow
+import com.example.by.tvShows.TvShowDetailsActivity
+import com.xwray.groupie.GroupieAdapter
 
 class TVShowListingActivity : AppCompatActivity() {
 
     private lateinit var binding: TvshowlistingactivityLayoutBinding
-    private lateinit var tvShowAdapter: TvShowAdapter
+    private val tvShowAdapter = GroupieAdapter()
     private val tvShowList: MutableList<TvShow> = mutableListOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,10 +24,18 @@ class TVShowListingActivity : AppCompatActivity() {
         val tvShowRecyclerView = binding.tvShowRecyclerView
         tvShowRecyclerView.layoutManager = LinearLayoutManager(this)
         tvShowRecyclerView.setHasFixedSize(true)
-        tvShowAdapter = TvShowAdapter(this, tvShowList)
         tvShowRecyclerView.adapter = tvShowAdapter
-
         details()
+
+        tvShowAdapter.addAll(tvShowList.map { tvShow ->
+            TvShowAdaper2(tvShow, action = {
+                val intent = Intent(this, TvShowDetailsActivity::class.java)
+
+                intent.putExtra(Keys.tvShowDetailsKey, tvShow)
+                startActivity(intent)
+            })
+        }
+        )
     }
 
     private fun details() {
